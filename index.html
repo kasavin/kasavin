@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Kasavin - AI Architect</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #4a5568;
+            --accent: #3182ce;
+            --background: #edf2f7;
+            --white: #ffffff;
+            --gradient-start: #2c5282;
+            --gradient-end: #2b6cb0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            background: var(--background);
+        }
+
+        nav {
+            background: var(--primary);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-content h1 {
+            color: var(--white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #90cdf4;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: var(--white);
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .experience-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .company {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .role {
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .date {
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .skill-card:hover {
+            border-bottom-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        #about {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: -2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-content">
+            <h1>Alex Kasavin</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h2 class="title">Senior AI Architect @ Microsoft</h2>
+            <p class="subtitle">Tech for Social Impact | Yale MBA</p>
+            <p>Brooklyn, New York</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h3 class="section-title">About</h3>
+            <p>
+                As an AI architect and former product manager on the Tech for Social Impact team at Microsoft,
+                I build solutions with, and for, nonprofits and NGOs. Prior to this role, I worked with F500
+                enterprise clients as a data and AI cloud solution architect.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h3 class="section-title">Experience</h3>
+            <div class="experience-item">
+                <h4 class="company">Microsoft</h4>
+                <div>
+                    <p class="role">Senior AI Architect</p>
+                    <p class="date">Jul 2024 - Present</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <p class="role">Senior Product Manager</p>
+                    <p class="date">Sep 2021 - Jul 2024</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <p class="role">Senior Cloud Solution Architect</p>
+                    <p class="date">Sep 2020 - Sep 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3 class="section-title">Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">Cloud Computing</div>
+                <div class="skill-card">Enterprise Software</div>
+                <div class="skill-card">AI Solutions</div>
+                <div class="skill-card">Product Management</div>
+                <div class="skill-card">Technical Leadership</div>
+                <div class="skill-card">Solution Architecture</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Alex Kasavin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
